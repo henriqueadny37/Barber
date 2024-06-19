@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import pomada from "./Fotos/Catalogo/pomada.jpg";
 import banner from "./Fotos/Catalogo/banner.png";
+import Link from "next/link";
 
 export default function Catalogo() {
   return (
@@ -17,7 +18,7 @@ export default function Catalogo() {
             <button
               className="mt-1 text-lg lg:text-xl font-semibold text-abwhite bg-abdeep hover:bg-abdark hover:text-abwhite w-44 h-10 lg:w-60 lg:h-16
            rounded-xl">
-              Acesse o catalogo
+              <a href="/Section/Catalogo/PagCatalogo">Acesse o Catálogo</a>
             </button>
           </div>
         </div>

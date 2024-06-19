@@ -4,6 +4,7 @@ import Barbearia from "./Fotos/Barbearia.png";
 import reginaldofoto1 from "./Fotos/Fotoapresentação/reginaldofoto1.jpeg";
 import Linhas from "./Linhas";
 import Servicosbarba from "./Servicosbarba";
+import Footer from "./Footer";
 
 export const Section = () => {
   return (
@@ -28,7 +29,7 @@ export const Section = () => {
         <div className="my-8 p-3">
           <Catalogo />
         </div>
-
+        <Footer />
         <figure className="md:flex bg-abbrown rounded-xl p-8 md:p-0 m-4">
           <img
             src={reginaldofoto1.src}

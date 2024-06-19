@@ -3,7 +3,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 
-export default function formulario() {
+export default function page() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [name, setName] = useState("");
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -34,13 +34,13 @@ export default function formulario() {
       )
       .then(
         (response) => {
-          console.log("email enviado", response.status, response, text);
+          console.log("email enviado", response.status, response.text);
           setEmail("");
           setName("");
           setMessage("");
         },
         (err) => {
-          console.log("error", err);
+          console.log("ERRO: ", err);
         }
       );
   }
@@ -80,10 +80,14 @@ export default function formulario() {
               className="my-4 rounded-md border-0 p-4 h-24 resize-none text-abbrown"
             />
 
-            <div>
-              <button>
-                <a href="/next">enviar</a>
-              </button>
+            <div className="bg-abdeep rounded-lg cursor-pointer">
+              <a href="/agendamento/next">
+                <input
+                  type="submit"
+                  value="enviar"
+                  className="cursor-pointer"
+                />
+              </a>
             </div>
           </div>
         </form>
@@ -98,7 +102,13 @@ export default function formulario() {
     </>
   );
 }
-
+{
+  /*<div>
+              <button>
+                <a href="/agendamento/next">enviar</a>
+              </button>
+            </div> */
+}
 {
   /*justify-center items-center text-abbrown p-4 min-h-screen*/
 }

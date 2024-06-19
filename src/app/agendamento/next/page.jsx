@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function volver() {
+export default function page() {
   return (
     <>
       <div className="flex-col justify-center items-center text-center">
