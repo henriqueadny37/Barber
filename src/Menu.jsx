@@ -44,6 +44,11 @@ export const Menu = () => {
                   className="text-abwhite hover:bg-abwhite hover:text-abbrown p-2 rounded-lg">
                   Instagram
                 </a>
+                <a
+                  href="/agenda"
+                  className="text-abwhite hover:bg-abwhite hover:text-abbrown p-2 rounded-lg">
+                  Agendar
+                </a>
               </div>
             </div>
             <div className="md:hidden flex items-center">
